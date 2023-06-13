@@ -10,6 +10,7 @@ def main():
     
     kk_img = pg.image.load("ex01-20230613/fig/3.png")
     kk_img = pg.transform.flip(kk_img, True, False)
+    kk_imgs = [kk_img, pg.transform.rotozoom(kk_img,10, 1.0)]
     tmr = 0
     while True:
         for event in pg.event.get():
